@@ -23,8 +23,12 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     }, {
         $set: {
             name: 'Viet Anh',
-            age: 22
+            age: 21
         }
+        // use inc to plus
+        // $inc: {
+        //     age: 21
+        // }
     }, {
         returnOriginal: false
     }).then(result => {
